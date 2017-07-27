@@ -20,6 +20,9 @@ module Fluent
       config_param :assume_role_session_name, :string, :default => "fluentd"
     end
 
+    def multi_workers_ready?
+      true
+    end
 
     #
     # @override
